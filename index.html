@@ -213,7 +213,7 @@
       var styleDegree = document.getElementsByName('styleDegree')[0].value;
       var token = document.getElementsByName('token')[0].value;
       var previewText = document.getElementsByName('previewText')[0].value;
-      var ssml = createSSML(previewText, voiceName, styleName, styleDegree, pitch)
+      var ssml = createSSML(previewText, voiceName, styleName, styleDegree, rate)
       if (token) {
         headers['Authorization'] = 'Bearer ' + token;
       }
